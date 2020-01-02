@@ -1,0 +1,61 @@
+.wall[orientation="horizontal"] {
+    height: 2px;
+    width: 5vmin;
+    float: left;
+}
+
+.wall[orientation="vertical"] {
+    height: 5vmin;
+    width: 2px;
+    float: left;
+}
+
+.wall[blocking=false] {
+    background-color: lightgray;
+}
+
+.wall[blocking=true]{
+    background-color: black;
+}
+
+.square {
+    height: 5vmin;
+    width: 5vmin;
+    border: none;
+    float: left;
+}
+
+.dot {
+    height: 2px;
+    width: 2px;
+    background-color: black;
+    float: left;
+}
+
+.wallRow {
+    display:table;
+}
+
+.squareRow {
+    display:table;
+}
+
+input.move {
+    height: 5vmin;
+    width: 5vmin;
+}
+
+@media (min-width: 800px) {
+    .wall[orientation="horizontal"]{
+        width: 40px;
+    }
+
+    .wall[orientation="vertical"]{
+        height: 40px;
+    }
+
+    .square {
+        width: 40px;
+        height: 40px;
+    }
+}
