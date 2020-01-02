@@ -41,8 +41,8 @@
 }
 
 input.move {
-    height: 5vmin;
-    width: 5vmin;
+    height: max(5vmin, 40px);
+    width: max(5vmin, 40px);
 }
 
 @media (min-width: 800px) {
